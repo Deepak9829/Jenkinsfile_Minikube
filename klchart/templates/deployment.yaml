@@ -26,3 +26,5 @@ spec:
         - mountPath: /usr/share/nginx/html
           name: mypod-pvc
 
+      nodeSelector:
+          ip-10-0-1-171.ap-south-1.compute.internal: ip-10-0-1-171.ap-south-1.compute.internal
