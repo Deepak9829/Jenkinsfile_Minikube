@@ -16,13 +16,13 @@ pipeline {
  
         stage('Helm Package Install') {
             steps {
-                sh 'helm install KLChart KLChart/'
+                sh 'sudo helm install KLChart KLChart/'
             }
         }
  
         stage('See Kubernetes Resources') {
             steps {
-                sh 'kubectl get all'
+                sh 'sudo kubectl get all'
             }
         }
     }
