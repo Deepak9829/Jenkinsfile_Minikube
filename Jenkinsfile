@@ -16,7 +16,7 @@ pipeline {
  
         stage('Helm Package Install') {
             steps {
-                sh 'sudo /usr/local/bin/helm install KLChart KLChart/'
+                sh 'sudo /usr/local/bin/helm install klchart klchart/'
             }
         }
  
