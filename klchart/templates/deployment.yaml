@@ -6,7 +6,7 @@ metadata:
     app: "testpo"
 
 spec:
-  replicas: 7
+  replicas: 2
   selector:
     matchLabels:
       app: testpo
@@ -21,7 +21,7 @@ spec:
          claimName: mypvc
       containers:
       - name: "testcon1"
-        image: "vimal13/apache-webserver-php"
+        image: "deepakdocker25/dockerapp"
         volumeMounts:
         - mountPath: /usr/share/nginx/html
           name: mypod-pvc
