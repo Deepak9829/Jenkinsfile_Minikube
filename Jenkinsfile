@@ -6,7 +6,7 @@ pipeline {
         stage('git clone') {
             steps {
                 sh 'rm -rvf Jenkinsfile_Minikube'
-                sh 'https://github.com/Deepak9829/Jenkinsfile_Minikube.git'
+                sh 'git clone https://github.com/Deepak9829/Jenkinsfile_Minikube.git'
                 sh 'pwd'
                 sh 'ls -l Jenkinsfile_Minikube'
             }
