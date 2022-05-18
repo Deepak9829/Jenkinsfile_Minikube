@@ -59,7 +59,9 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-nodeSelector: {}
+nodeSelector:
+  Slave1: ip-10-0-1-171.ap-south-1.compute.internal
+
 
 tolerations: []
 
