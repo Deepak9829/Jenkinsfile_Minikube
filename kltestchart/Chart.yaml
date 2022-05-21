@@ -1,6 +1,6 @@
 apiVersion: v2
 name: kltestchart
-description: A Helm chart for Kubernetes to see everything new new
+description: A Helm chart for Kubernetes to see everything new chart
 
 # A chart can be either an 'application' or a 'library' chart.
 #
