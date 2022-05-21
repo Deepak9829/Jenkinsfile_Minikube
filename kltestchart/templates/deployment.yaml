@@ -17,5 +17,5 @@ spec:
      spec:
       containers:
       - name: "testcon1"
-        image: "vimal13/apache-webserver-php"
+        image: "deepakdocker25/dockerapp"
         
