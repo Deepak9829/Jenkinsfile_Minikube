@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "kltestchart.fullname" . }}
-  labels:
-    {{- include "kltestchart.labels" . | nindent 4 }}
+  name: testlb
 spec:
-  type: {{ .Values.service.type }}
-  ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
+  type: NodePort
   selector:
-    {{- include "kltestchart.selectorLabels" . | nindent 4 }}
+      app: testpo
+
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 80
+

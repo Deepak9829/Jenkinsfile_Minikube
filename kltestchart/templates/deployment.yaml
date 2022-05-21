@@ -15,13 +15,7 @@ spec:
       labels:
         app: testpo
      spec:
-      volumes:
-      - name: mypod-pvc
-        persistentVolumeClaim:
-         claimName: mypvc
       containers:
       - name: "testcon1"
         image: "vimal13/apache-webserver-php"
-        volumeMounts:
-        - mountPath: /usr/share/nginx/html
-          name: mypod-pvc
+        
