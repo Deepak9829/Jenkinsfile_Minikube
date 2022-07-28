@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        label 'minikube'
+        label 'kubecluster'
     }
  
     stages {
