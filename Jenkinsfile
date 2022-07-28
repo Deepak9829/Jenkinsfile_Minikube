@@ -20,7 +20,7 @@ pipeline {
             }
         }
  
-        stage('See Kubernetes Resources all') {
+        stage('See Kubernetes Resources all see') {
             steps {
                 sh 'sudo kubectl get all'
             }
